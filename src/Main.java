@@ -1,11 +1,13 @@
-import javax.naming.spi.DirStateFactory.Result;
-
+import chp2.chp2;
 public class Main{
-   public static void main(String[] args){
-       int value = 30;
-       int result = value + 12;
+   public static void main(String[] args) throws Exception{
+       //int keycode;
        
-       System.out.println(result);
-        
+       //keycode = System.in.read();
+       //System.out.println("keycode = " + keycode);
+       new chp2().LongExample();
+       new chp2().CharExample();
+       new chp2().PrintfExample();
+       new chp2().KeycodeExample();
     }
 }
