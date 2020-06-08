@@ -10,5 +10,6 @@ public class Main{
        new chp2().ScannerExample();*/
        chp3 chp3_practice = new chp3();
        chp3_practice.ConditionalOperationExample();
+       chp3_practice.chp3_9();
     }
 }
