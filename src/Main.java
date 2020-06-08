@@ -10,5 +10,6 @@ public class Main{
        new chp2().PrintfExample();
        new chp2().KeycodeExample();
        new chp2().ContinueKeyCodeExample();
+       new chp2().ScannerExample();
     }
 }

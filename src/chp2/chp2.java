@@ -1,5 +1,5 @@
 package chp2;
-
+import java.util.Scanner;
 public class chp2 {
     public void LongExample(){
         System.out.println("long 타입 예제");
@@ -40,6 +40,18 @@ public class chp2 {
             keycode = System.in.read();
             System.out.println("keycode : " + keycode);
             if(keycode == 113) break;
+        }
+        System.out.println("종료");
+    }
+    public void ScannerExample()throws Exception{
+        System.out.println("Scanner 클래스 예제");
+        Scanner scanner = new Scanner(System.in);
+        String input;
+        
+        while(true){
+            input = scanner.nextLine();
+            System.out.println("입력된 문자열: \"" + input + "\"");
+        if(input.equals("q")) break;
         }
         System.out.println("종료");
     }
