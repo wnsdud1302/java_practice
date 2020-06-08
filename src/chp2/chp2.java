@@ -27,8 +27,6 @@ public class chp2 {
         keycode = System.in.read();
         System.out.println("keycode : " + keycode);
         
-        keycode = System.in.read();
-        System.out.println("keycode : " + keycode);
     }
     
 }
