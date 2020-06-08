@@ -14,9 +14,9 @@ public class chp3{
         double input1;
         double input2;
         while(true){
-            System.out.println("첫번째 수: ");
+            System.out.print("첫번째 수: ");
             input1= scanner.nextDouble();
-            System.out.println("두번째 수: ");
+            System.out.print("두번째 수: ");
             input2 = scanner.nextDouble();
             if(input2 == 0){
                 System.out.println("결과: 무한대");
