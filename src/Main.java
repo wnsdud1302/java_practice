@@ -3,5 +3,6 @@ public class Main{
    public static void main(String[] args) throws Exception{
        chp4 c4 = new chp4();
        c4.SwitchDiceExample();
+       c4.ForSumExample();
     }
 }

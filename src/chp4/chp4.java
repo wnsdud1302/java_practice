@@ -49,4 +49,12 @@ public class chp4 {
                 break;
         }
     }
+    public void ForSumExample(){
+        int sum = 0;
+        for(int i = 0, j = 100; i < 50 && j > 50; i++, j--){
+            sum += i * j;
+        }
+        System.out.println(sum + "입니다.");
+    }
+    //public void 
 }
