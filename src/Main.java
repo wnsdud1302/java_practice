@@ -1,7 +1,7 @@
-import chp4.chp4;
+import chp5.chp5;
 public class Main{
    public static void main(String[] args) throws Exception{
-       chp4 c4 = new chp4();
-       c4.chp4_7();
+       chp5 c5 = new chp5();
+       c5.ArrayExample();
     }
 }
