@@ -1,6 +1,12 @@
 package chp5;
 
+import java.util.Calendar;
+
+
 public class chp5 {
+    public enum Week{
+        MONDAY, TUESDAY, WEDNSDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+    }
     public void ArrayExample(){
         int score[];
         score = new int[] {83, 90, 87};
@@ -61,6 +67,41 @@ public class chp5 {
         double avg = (double) sum / scores.length;
         System.out.println("점수평균: " + avg);
     }
+    public void EnumWeekExample(){
+        Week today = null;
+        Calendar cal = Calendar.getInstance();
+        int week = cal.get(Calendar.DAY_OF_WEEK);
+        switch(week){
+            case 1:
+                today = Week.SUNDAY;
+                break;
+            case 2:
+                today = Week.MONDAY;
+                break;
+            case 3:
+                today = Week.TUESDAY;
+                break;
+            case 4:
+                today = Week.WEDNSDAY;
+                break;
+            case 5:
+                today = Week.THURSDAY;
+                break;
+            case 6:
+                today = Week.FRIDAY;
+                break;
+            case 7:
+                today = Week.SATURDAY;
+                break;
+        }
+        System.out.println("오늘 요일: " + today);
+        if(today == Week.SUNDAY){
+            System.out.println("일요일에는 냉동을 먹습니다.");
+        }
+        else{
+            System.out.println("짬밥을 먹습니다.");    
+        }
+    }
  /*   public static void main(String[] args){
         if(args.length != 2){
             System.out.println("값의 수가 부족합니다.");
@@ -77,3 +118,5 @@ public class chp5 {
     }
     */
 }
+
+
