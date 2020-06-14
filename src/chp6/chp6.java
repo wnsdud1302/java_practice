@@ -1,5 +1,6 @@
 package chp6;
 
+
 public class chp6 {
     public chp6(){
         System.out.println();
@@ -18,5 +19,8 @@ public class chp6 {
             sum += i;
         }
         return sum;
+    }
+    public int plus(int x, int y){
+        return x + y;
     }
 }

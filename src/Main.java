@@ -4,9 +4,9 @@ public class Main{
        int a[] = {1,2,3,4,5};
        chp6 c6 = new chp6();
        int sum1 = c6.sum1(a);
-       System.out.println(sum1);
+       System.out.println("result: " + sum1);
        int sum2 = c6.sum2(1,2,3,4,5);
-       System.out.println(sum2);
+       System.out.println("result: " + sum2);
        
        
 
