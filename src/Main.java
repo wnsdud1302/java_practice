@@ -1,25 +1,31 @@
+import java.util.concurrent.Delayed;
+
 import chp7.*;
 public class Main{
    public static void main(String[] args) throws Exception{
-       dmbPhone Phone1 = new dmbPhone("samsung", "black", 10);
-       System.out.println("모델 : " + Phone1.model);
-       System.out.println("색깔: " + Phone1.color);
-       System.out.println("채널: " + Phone1.channel);
-       
-       Phone1.bootingLogo();
-       Phone1.bootMode = dmbPhone.LG;
-       Phone1.bootingLogo();
-       Phone1.bootMode = dmbPhone.SAMSUNG;
-       Phone1.powerOn();
-       Phone1.bell();
-       Phone1.sendVoice("hello world!");
-       Phone1.recieveVoice("hello java");
-       Phone1.hangUp();
-       
-       Phone1.turnOndmb();
-       Phone1.changeChanneldmb(5);
-       Phone1.turnOffdmb();
-       Phone1.powerOff();
-       
+       Car car = new Car();
+       for(int i = 0; i <= 5; i++){
+           int problemLocation = car.run();
+           Delayed(1000);
+           switch(problemLocation){
+               case 1:
+                   System.out.println("앞왼쪽 HankookTire로 교체");
+                   car.frontLeftTire = new HankookTire("안왼쪽", 15);
+                   break;
+               case 2:
+                   System.out.println("앞오른쪽 KumhoTire로 교체");
+                   car.frontRightTire = new KumhoTire("앞오른쪽", 13);
+                   break;
+               case 3:
+                   System.out.println("뒤왼쪽 HankookTire로 교체");
+                   car.backLeftTire = new HankookTire("뒤왼쪽", 14);
+                   break;
+               case 4:
+                   System.out.println("뒤오른쪽 KumhoTire로 교체");
+                   car.backRightTire = new KumhoTire("뒤오른쪽", 17);
+           }
+           System.out.println("------------------------");
+       }
+               
     }
 }
