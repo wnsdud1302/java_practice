@@ -1,12 +1,28 @@
-import java.util.concurrent.Delayed;
-
 import chp7.*;
+import chp7.abstracts.*;
+
 public class Main{
    public static void main(String[] args) throws Exception{
-       Car car = new Car();
-       for(int i = 0; i <= 5; i++){
+       Dog dog = new Dog();
+       Cat cat = new Cat();
+       Main m = new Main();
+       Animal animal = null;
+       
+       m.sounds(dog, cat);
+       animal = new Dog();
+       animal.sound();
+       animal = new Cat();
+       animal.sound();
+       System.out.println("-----------");
+       
+       m.animalSound(new Dog());
+       m.animalSound(new Cat());
+
+   } 
+    
+    void carRepair(Car car){
+               for(int i = 0; i <= 5; i++){
            int problemLocation = car.run();
-           Delayed(1000);
            switch(problemLocation){
                case 1:
                    System.out.println("앞왼쪽 HankookTire로 교체");
@@ -25,7 +41,15 @@ public class Main{
                    car.backRightTire = new KumhoTire("뒤오른쪽", 17);
            }
            System.out.println("------------------------");
-       }
-               
+        
+        }
+    }
+    void sounds(Dog d, Cat c){
+        d.sound();
+        c.sound();
+        System.out.println("-----------");
+    }
+    void animalSound(Animal a){
+        a.sound();
     }
 }
