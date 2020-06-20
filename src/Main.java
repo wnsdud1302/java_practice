@@ -1,23 +1,10 @@
 import chp7.*;
 import chp7.abstracts.*;
+import chp8.Interface.Basic.*;
 
 public class Main{
    public static void main(String[] args) throws Exception{
-       Dog dog = new Dog();
-       Cat cat = new Cat();
-       Main m = new Main();
-       Animal animal = null;
        
-       m.sounds(dog, cat);
-       animal = new Dog();
-       animal.sound();
-       animal = new Cat();
-       animal.sound();
-       System.out.println("-----------");
-       
-       m.animalSound(new Dog());
-       m.animalSound(new Cat());
-
    } 
     
     void carRepair(Car car){
