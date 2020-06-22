@@ -1,14 +1,13 @@
 package chp8.Interface.Basic;
 
-public class Television implements RemoteControl {
-    
+public class smartTeleviosn implements RemoteControl, Searchable {
     private int volume;
     
     public void turnOn(){
-        System.out.println("TV전원을 켭니다.");
+        System.out.println("TV를 킵니다.");
     }
     public void turnOff(){
-        System.out.println("TV전원을 끕니다.");
+        System.out.println("TV를 끕니다.");
     }
     public void setVolume(int volume){
         if(volume>RemoteControl.MAX_VOLUME){
@@ -18,8 +17,11 @@ public class Television implements RemoteControl {
             this.volume = RemoteControl.MIN_VOLUME;
         }
         else{
-            this.volume = volume;
+        this.volume = volume;
         }
-        System.out.println("현재 TV 볼륨: " + this.volume);
+        System.out.println("현재 TV volume: " + this.volume);
+    }
+    public void search(String url){
+        System.out.println(url + "을 겁색합니다.");
     }
 }
