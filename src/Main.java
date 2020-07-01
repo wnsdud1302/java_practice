@@ -1,16 +1,17 @@
-import chp8.Interface.DnP.*;
+import chp9.nestedClass.anonymous.Interface.*;
 
-public class Main{
+public class Main {
    public static void main(String[] args) throws Exception{
-       Driver driver = new Driver();
-      
-       driver.drive(new Bus());
-       driver.drive(new Texi());
+       Anonymous anony = new Anonymous();
        
-       Vehicle vehicle = new Bus();
-       Bus bus = (Bus) vehicle;
+       anony.field.turnOn();
        
-       vehicle.run();
-       bus.checkFare();
+       anony.method1();
+       
+       Window w = new Window();
+       w.button1.touch();
+       w.button2.touch();
+       
+       
        }
 }
