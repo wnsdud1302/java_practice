@@ -1,6 +1,6 @@
-import chp9.nestedClass.anonymous.Interface.*;
+package chp10.Exception.handling;
 
-public class Main {
+public class Throws {
     public static void main(String[] args){
         try{
             findclass();
