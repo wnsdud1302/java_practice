@@ -1,2 +1,2 @@
 # java_practice
-연습요 자바 레포 구름 ide
+군대에서 공부하던 java
